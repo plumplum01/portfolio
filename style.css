@@ -1,0 +1,532 @@
+:root {
+    --color-White:#ffffff;
+    --color-Black: #000000;
+}
+
+@font-face {
+    font-family: '견출고딕';
+    src: url('/Font/h1/sm3-regular_.woff2') format('woff2'),
+        url('/Font/h1/sm3-regular_.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: '견출고딕Std';
+    src: url('/Font/sm-regular_.woff2') format('woff2'),
+        url('/Font/sm-regular_.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+html {
+    /* 62.5% of 16px = 10px */
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    justify-items: center;
+    word-break: keep-all;
+}
+
+
+/* Typography */
+h1 {
+    font-size: 11rem;
+    font-family: '견출고딕Std';
+    line-height: 1;
+    letter-spacing: -4px;
+    margin: 0;
+    align-items: flex-end;
+} 
+
+h3 {
+    font-size: 1.8rem;
+    font-family: '견출고딕Std';
+    margin: 4px 30px 7px 0;
+}
+
+h5 {
+    font-family: '견출고딕Std';
+    font-size: 1rem;
+    margin: 0;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: -0.6px;
+    font-size: 1.2rem;
+    line-height: 16px;
+    /* line-height: 1.3; */
+}
+
+.font-longtitle {
+    font-size: 10rem;
+    font-family: '견출고딕Std';
+    line-height: 1;
+    letter-spacing: -4px;
+    margin: 0;
+    align-items: flex-end;
+}
+
+.tr-hover > td {
+    font-size: 1.25rem;
+}
+
+a {
+    color: var(--color-Black);
+}
+
+#aboutMe {
+    margin: 0;
+}
+
+.header-eng {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    /* letter-spacing: 0.5px; */
+    line-height: 84px;
+}
+
+.card__body {
+    justify-content: space-between;
+}
+
+.card__body-kor {
+    margin-right: 2rem;
+}
+
+.card__body-eng {
+    font-size: 1.5rem;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 4px 50px 7px 0;
+}
+
+
+/* Icons */
+.icon {
+    width: 18px;
+    height: 18px;
+    color: var(--color-Black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.Container {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutme {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.aboutmebtn {
+    margin: 0 !important;
+}
+
+.header .aboutme {
+    width: 100%;
+    background-color: var(--color-Black);
+    color: var(--color-White);
+}
+
+#lookatme {
+    justify-content: left !important;
+    margin-right: 0;
+    padding: 0.2rem 0 3.2rem 0.5rem;
+    font-size: 2rem;
+    font-family: '견출고딕Std';
+    color: var(--color-White);
+    background-color: var(--color-Black);
+    border-collapse: collapse;
+}
+
+/* Card */
+
+/* Card__header */
+.card {
+    overflow: hidden;
+}
+
+.card__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: flex-end;
+}
+
+/* .Title {
+    transform: rotate(-30deg);
+} */
+
+.Title-Small {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 112px;
+}
+
+
+/* Card__body */
+
+.card__body {
+    border-top: 4px solid var(--color-Black);
+    display: flex;
+}
+
+/* Table */
+table {
+    /* background-color: var(--color-Black); */
+    width: 100%;    
+    border: 0;
+    border-collapse: collapse;
+}
+
+thead {
+    text-align: start;
+    width: 100%;
+    padding-bottom: 4rem;
+}
+
+/* .thead-tr {
+    padding-bottom: 4rem;
+    text-align: start;
+    border-collapse: collapse;
+} */
+
+thead {
+    background-color: var(--color-Black);
+}
+
+tbody {
+    vertical-align : top;
+    background-color: var(--color-White);
+    border: none;
+}
+
+.header-row {
+    margin-right: 0;
+    font-size: 1.5rem;
+    font-family: '견출고딕Std';
+    color: var(--color-White);
+    border-collapse: collapse;
+    /* border-top-color: var(--color-Black); */
+}
+
+.table-eng {
+    font-size: 1rem;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 0 20px 0;
+}
+
+
+
+td {
+    border-top: 1px solid var(--color-Black);
+    border-collapse: collapse;
+}
+
+#Date, #Time, #Production, #Rate {
+    width: 50px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+}
+#DateTitle, #TimeTitle, #ProductionTitle, #RateTitle {
+    width: 50px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+}
+
+
+
+#Title {
+    width: 150px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+#Running-Time {
+    width: 60px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+
+#Talk {
+    padding-bottom: 30px;
+}
+
+.tr-hover:hover { 
+    background-color: #ff8c00;
+    transition: background-color 0.7s;
+}
+
+.tr-hover:active {
+    background-color: #ffc37a;
+}
+
+
+/* work html */
+.work-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-info {
+    font-size: 1.5rem !important;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+
+.work-content {
+    display: block;
+    width: 80%;
+}
+
+.work-eng {
+    font-size: 1.5rem;
+    font-family: 'neue-haas-grotesk-display', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin: 0 0 20px 0;
+}
+
+.work-table {
+    display: flex;
+    width: 50%;
+    gap: 80px;
+    justify-content: flex-end;
+}
+
+
+.icon-back {
+    width: 40px;
+    height: 40px;
+    margin: 2rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work > img{
+    width: 100%;
+}
+
+.work-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.work-description {
+    width: 62%;
+    text-align: left;
+}
+
+.work-description > span {
+    line-height: 20px;
+    word-break: keep-all;
+}
+
+/* introduce */
+.introduce {
+    font-size: 2rem;
+    line-height: 32px;
+}
+
+
+/* 반응형 */
+@media screen and (max-width: 1184px) {
+    body {
+        margin: 0; /* 마진 제거 */
+        padding: 0 !important;
+    }
+    .Container{
+        padding: 30px !important;
+        width: calc(100% - 6rem) !important; /* 전체 너비에서 4rem (왼쪽, 오른쪽 패딩) 빼기 */
+    }
+    .card {
+        width: 100% !important;
+    }
+
+    .work-title{
+        margin-bottom: 3rem;
+    }
+
+    .work-info {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .work-table {
+        display: flex !important;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .work-description {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    body {
+        margin: 0; /* 마진 제거 */
+        padding: 0 !important;
+    }
+    .Container{
+        padding: 20px 0 30px 24px !important;
+        width: calc(100% - 5rem) !important; /* 전체 너비에서 4rem (왼쪽, 오른쪽 패딩) 빼기 */
+    }
+    .card {
+        width: 100% !important;
+    }
+    .card__header {
+        display: block !important;
+    }
+    h1, .font-longtitle {
+        font-size: 5rem !important;
+        letter-spacing: -4px;
+    }
+    .header-eng {
+        line-height: 56px;
+    }
+
+    #DateTitle {
+        display: none;
+    }
+    
+    #Date {
+        display: none;
+    }
+    #TimeTitle {
+        display: none;
+    }
+
+    #Time {
+        display: none;
+    }
+
+    #Talk {
+        display: none;
+    }
+    .modal_popup {
+        width: 90% !important;
+        height: 360px !important;
+        padding: 0 !important;
+    }
+    .modal_text {
+        font-size: 1.23rem !important;
+        padding: 0 20px 40px 20px !important;
+        gap: 40px !important;
+        display: flex !important;
+        margin-bottom: 0 !important;
+    }
+    .close_btn {
+        margin-right: 20px;
+    }
+
+    .header-eng {
+        font-family: "neue-haas-grotesk-display", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        /* letter-spacing: 0.5px; */
+        line-height: 42px;
+        padding-bottom: 2rem;
+    }
+
+
+}
+
+
+/*모달 팝업 영역 스타일링*/
+.modal {
+    /*팝업 배경*/
+        display: none;
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 136vh;
+        overflow: hidden;
+        background: rgba(0, 0, 0, 0.603);
+    }
+
+.modal.on {
+        display: block;
+}
+
+.modal .modal_popup {
+/*팝업*/
+    width: 560px;
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 40px 20px 40px;
+    background: #ffffff;
+    /* border-radius: 5px; */
+}
+
+.modal_h3 {
+    font-size: 4rem;
+    font-family: '견출고딕Std';
+    color: var(--color-White);
+    background-color: var(--color-Black);
+    margin-bottom: 6px;
+    padding-bottom: 2rem;
+}
+
+.modal_text {
+    font-size: 1.6rem;
+    /* font-family: '견출고딕Std'; */
+    line-height: 27px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 90px;
+}
+
+.modal .modal_popup .close_btn {
+    display: block;
+    padding: 10px 20px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.modal_btn {
+    border: 0;
+    text-decoration: underline;
+    background-color: transparent;
+    font-size: 2rem;
+    transition: all 0.3 ease-in-out;
+}
+
+::selection {
+    background: #ff8c00;
+    color: var(--color-Black);
+}
+
+.back > img {
+    cursor: pointer;
+}
