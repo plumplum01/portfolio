@@ -1,2 +1,4 @@
 fin_qanda.mp4 filter=lfs diff=lfs merge=lfs -text
 value.mp4 filter=lfs diff=lfs merge=lfs -text
+Imges/quanda/fin_qanda.mp4 filter=lfs diff=lfs merge=lfs -text
+Imges/traditional/value.mp4 filter=lfs diff=lfs merge=lfs -text
